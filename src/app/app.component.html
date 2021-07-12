@@ -1,0 +1,183 @@
+<h1>Hello world</h1>
+<h1>Angula Interpolation</h1>
+<h1>{{name}}</h1>
+<h1>{{getName()}}</h1>
+<h1>{{obj.age}}</h1>
+<h2>{{arr.length}}</h2>
+<h3>{{a+b}}</h3>
+<h3>{{siteUrl}}</h3>
+
+
+<h3>What is Component in Angular</h3>
+<app-user-list></app-user-list>
+
+<h4>Call Function in angular</h4>
+<button (click)="getName1()">Get My Name</button>
+
+<h5>Important Events in angular</h5>
+<button (click)="myEvent( )">Click me</button>
+
+<br>  <br>
+<input type="text" myEvent />
+
+<br>  <br>
+<input type="text" myEvent />
+
+<div style="background-color: aqua;">
+Mouse Events
+</div>
+
+
+<h6>Get TextBox Value in Angular</h6>
+<input type="text"  />
+
+<h6>Property Binding in Angular</h6>
+<input type="text" [disabled]="disabledBox" [value]="name"  />
+
+<br> <br>
+<input type="text" [disabled]="disabledBox" value={{name}}  />
+
+<br> <br>
+<button (click)="enableBox()">Enable TextBox</button>
+
+
+<h6>Conditions in Angular</h6>
+<h6 *ngIf="show else elseBlock">  
+    if Block
+</h6>
+
+<ng-template #elseBlock>
+    <h6>else block</h6>
+</ng-template>
+
+
+<ng-template #ifBlock>
+    <h6>if block</h6>
+</ng-template>     
+
+
+<ng-template [ngIf]="show=='red'">
+    <h6>Red block</h6>
+</ng-template>
+
+<ng-template [ngIf]="show1=='green'">
+    <h6>green block</h6>
+</ng-template>
+
+<ng-template [ngIf]="show2=='blue'">
+    <h6>blue block</h6>
+</ng-template>
+
+
+<h6>Switch Case in Angular</h6>
+<div [ngSwitch]="color" >
+    <h6 style="color: red;" *ngSwitchCase="'red'">
+        red color
+    </h6>
+    
+    <div [ngSwitch]="color1" >
+    <h6 style="color: green;"*ngSwitchCase="'green'">
+        green color
+    </h6>
+</div>
+    
+    <div [ngSwitch]="color2" > 
+    <h6 style="color: blue;"*ngSwitchCase="'blue'">
+        blue color
+    </h6>
+</div>
+
+    <div [ngSwitch]="color3" > 
+    <h6 style="color: yellow;"*ngSwitchCase="'yellow'">
+        yellow color
+    </h6>
+</div>
+
+<h6>For Loop in Angular</h6>
+
+ <table border="1">
+     <tr>
+         <td>Name</td>
+         <td>Age</td>
+         <td>Email</td>
+     </tr>
+
+     <tr *ngFor="let item of data">
+         <td>{{item.name}}</td>
+         <td>{{item.age}}</td>
+         <td>{{item.email}}</td>
+     </tr>
+ </table>
+
+
+ <h4>Simple from in Angular</h4>
+
+     <button>get User Values</button>
+
+
+     <app-header></app-header>
+     <h1>Make Header Footer in Angular</h1>
+     <app-footer></app-footer>
+
+
+     <br><br><br><br>
+     <h6>Style Binding in Angular</h6>
+
+     <h6 style="color: red;">Header 1</h6>
+     <h6 [style.color]="'green'" >Header 1</h6>
+     <h6 [style.Color]="color4" >Dynamic Style </h6>
+     <h6 [style.Color]="err?'red':'green'" > Conditional Style </h6>
+
+     <Button (click)="updateColor()">Update Color</Button>
+
+
+     <br><br><br><br><br><br>
+     <h6>Add Bootstrap in Angular 10</h6>
+
+     <p>
+        <ngb-alert [dismissible]="false">
+          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </ngb-alert>
+      </p>
+
+      
+      <p>
+        <ngb-alert type="custom" [dismissible]="false"><strong>Whoa!</strong> This is a custom alert.</ngb-alert>
+      </p>
+
+
+      <button mat-button color="primary" >Angular</button>
+
+      <button mat-raised-button color="warn">Warn</button>
+
+      <mat-slider min="1" max="100"></mat-slider>
+      
+      <mat-card>Simple card</mat-card>
+
+      
+      
+      <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+
+<br><br><br><br>
+<mat-radio-group aria-label="Select an option">
+    <mat-radio-button value="1">Option 1</mat-radio-button>
+    <mat-radio-button value="2">Option 2</mat-radio-button>
+  </mat-radio-group>
+
+
+<br><br><br><br>
+  <h6>Pass data to Child Component in Angular</h6>
+
+  <button>Send data to parent Component</button>
+
+
+  <br><br><br><br>
+  <h4>Pipe in Angular</h4>
+  <h5>{{Name}}</h5>
+
+
